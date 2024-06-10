@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+      box-sizing: border-box;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  html,body{
+    min-width: 100%;
+    overflow-x: hidden;
+    font-size: 8px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  button {
+    border: 1px solid white;
+    background: linear-gradient(90deg, rgba(240,100,73,1) 0%, rgba(242,87,87,1) 100%);;
+    width: 30%;
+    padding: 10px;
+    border-radius: 3px;
+    color: #D9D9D9;
+    transition: background 0.5s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(90deg, rgba(240,100,73,1) 0%, rgba(242,87,87,1) 100%);;
+    color: white;
+    font-weight: normal;
+  }
+  
+  button:hover i {
+    color: #D9D9D9;
+  }
+  
+  i {
+    color: #D9D9D9;
+    margin-left: 20px;
+  }
+  
+  .arrow1 {
+    animation: slide1 1s ease-in-out infinite;
+    margin-left: 9px;
+  }
+
+  @keyframes slide1 {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(10px, 0);
+    }
+  }
+  
+  header .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    min-height: 8vh;
+    min-width: 100%;
+    z-index: 10;
+    background: #D9D9D9;
+    border-bottom: 1px solid #0c2d48;
+  }
+  
+  header .navigation .logo{
+    margin-left: 20px;
+  }
+  
+  header .navigation .logo h1{
+    color: #4C4F65;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  
+  header .navigation .menu-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    margin: auto 20px auto 0;
+  }
+  
+  header .navigation .humbarger {
+    margin-right: 20px;
+    display: none;
+   }
+   
+  header .navigation .humbarger .bar{
+    width: 30px;
+    height: 2px;
+    margin: 7px;
+    background: #b1d4e0;
+   }
+  
+  header .navigation .menu-list li a {
+    color: #4C4F65;
+    font-size: .8vw;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 1s ease, border 1s ease;
+    text-decoration: none;
+  }
+
+  /* Intro Section */
+  .intro-section {
+    height: 100vh;
+    position: relative;
+    background: #D9D9D9;
+  }
+  .intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    max-width: 1000vh;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+  .intro-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .name, .job, .aboutbtn {
+    margin: 10px;
+  }
+  .name {
+    color: #4C4F65;
+    font-size: 3.5vw;
+  }
+  .job {
+    color: #4C4F65;
+    font-size: 1.2vw;
+    font-style: italic;
+  }
+  .intro-hero, .jonard-m {
+    height: 500px;
+  }
+  .intro-hero img {
+    --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+    --m:
+      left   var(--_i,0%) top    var(--_g),
+      bottom var(--_i,0%) left   var(--_g),
+      top    var(--_i,0%) right  var(--_g),
+      right  var(--_i,0%) bottom var(--_g);
+    -webkit-mask: var(--m);
+            mask: var(--m);
+    filter: grayscale();
+    transition: .3s linear;
+    cursor: pointer;
+  }
+  .intro-hero img:hover {
+    --_i: 10%;
+    filter: grayscale(0);
+  }
+
+  /* Project section */
+  section {
+    padding: 40px;
+  }
+  .section-name {
+    text-align: center;
+  }
+  .section-name h2 {
+    font-size: 1vw;
+    color: #B19386;
+    padding: 10px;
+  }
+  .section-name h1 {
+    font-size: 2vw;
+    color: #4C4F65;
+    padding: 10px;
+  }
+
+  .projects-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-wrapper {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    padding-top: 26%;
+    margin-top: 5%;
+  }
+  .project1 {
+    background: url(images/jollibee.jpg);
+  }
+  .project2 {
+    background: url(images/images\ \(3\).jpg);
+  }
+  .project3 {
+    background: url(images/jollibee.jpg);
+  }
+  .project-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+  }
+  .project-text {
+    color: #D9D9D9;
+    flex-basis: 40%;
+  }
+  .project-text h1 {
+    font-size: 3vw;
+  }
+  .project-text p {
+    font-size: 1.2vw;
+    font-style: italic;
+  }
+  .project-number h2 {
+    font-size: 15vw;
+    color: #4C4F65;
+  }
+  /* End Project section */
+
+
+  /* About section */
+  
+  .about {
+    background-color: #D9D9D9;
+  }
+  .know-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5%;
+  }
+  .jonard-info h1, p, .graduate, .intro-languages{
+    margin: 20px 0;
+    color: #4C4F65;
+  }
+  .jonard-info h1{
+    font-size: 6vh;
+  }
+  .jonard-info p {
+    font-size: 2rem;
+    font-style: italic;
+    max-width: 600px;
+  }
+  .intro-languages {
+    margin: 20px 0;
+  }
+  .languages {
+    display: flex;
+  }
+  .languages img {
+    max-height: 50px;
+  }
+  /* End About section */
+
+
+  /* Responsive section */
+  /* Large Mobile :480px. */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    header .navigation .menu-list {
+      width: 60%;
+      background-color: orange;
+    }
+  
+    header .navigation .menu-list li a{
+      font-size: 1rem;
+    }
+  
+  }
+  
+  /* Large Mobile :480px. */
+  
+  @media only screen and (max-width: 767px) {
+  
+    header .navigation .menu-list {
+      position: absolute;
+      top: 8vh;
+      min-width: 100%;
+      background: rgba(15, 20, 35, 0.99);
+      text-align: center;
+      display: none;
+    }
+  
+    header .navigation .menu-list li {
+      display: block;
+    }
+  
+    header .navigation .menu-list li a {
+      display: block;
+      padding: 20px;
+      transition: color 1s ease, padding 1s ease, background-color 1s ease;
+  
+    }
+  
+    header .navigation .menu-list li a:hover{
+      color: #b1d4e0;
+      padding-left: 30px;
+      background: rgba(177, 212, 224, 0.2);
+    }
+  
+  
+    header .navigation .humbarger{
+      display: block;
+    }
+}
+    /* small mobile :320px. */
+
+@media only screen and (max-width: 479px) {
+
+
+  
+  }
+      
